@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Devices>
+    <Device type="custom" id="EversolarMonitor">
+        <Name>Eversolar Monitor Interface</Name>
+        <ConfigUI>
+            <Field id="ipAddress" type="textfield">
+                <Label>Eversolar Monitor IP address:</Label>
+            </Field>
+            <Field id="ipPort" type="textfield" default="3837">
+                <Label>Eversolar Monitor IP Port:</Label>
+            </Field>
+            <Field id="pollFreq" type="textfield" defaultValue="30">
+                <Label>Polling frequency in seconds:</Label>
+            </Field>
+        </ConfigUI>
+        <UiDisplayStateId>pac</UiDisplayStateId>
+        <States>
+            <State id="connected">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Connected at</TriggerLabel>
+                <ControlPageLabel>Connected</ControlPageLabel>
+            </State>
+            
+            <State id="serial">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Inverter Serial Number</TriggerLabel>
+                <ControlPageLabel>Serial Number</ControlPageLabel>
+            </State>
+            
+            <State id="id_string">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Inverter ID String</TriggerLabel>
+                <ControlPageLabel>ID String</ControlPageLabel>
+            </State>
+            
+            <State id="timestamp">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Max PV Power Time</TriggerLabel>
+                <ControlPageLabel>Max PV Power Time</ControlPageLabel>
+            </State>
+            
+            <State id="watts">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Max PV Power</TriggerLabel>
+                <ControlPageLabel>Max PV Power</ControlPageLabel>
+            </State>
+            
+            <State id="e_today">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Energy Today</TriggerLabel>
+                <ControlPageLabel>Energy Today</ControlPageLabel>
+            </State>
+
+            <State id="e_total">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Total Energy</TriggerLabel>
+                <ControlPageLabel>Total Energy</ControlPageLabel>
+            </State>
+
+            <State id="iac">
+                <ValueType>String</ValueType>
+                <TriggerLabel>AC Current</TriggerLabel>
+                <ControlPageLabel>AC Current</ControlPageLabel>
+            </State>
+            
+            <State id="op_mode">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Operations Mode</TriggerLabel>
+                <ControlPageLabel>Op Mode</ControlPageLabel>
+            </State>
+            
+            <State id="frequency">
+                <ValueType>String</ValueType>
+                <TriggerLabel>AC Frequency</TriggerLabel>
+                <ControlPageLabel>Frequency</ControlPageLabel>
+            </State>
+
+            <State id="vac">
+                <ValueType>String</ValueType>
+                <TriggerLabel>AC Voltage</TriggerLabel>
+                <ControlPageLabel>AC Voltage</ControlPageLabel>
+            </State>
+            
+            <State id="hours_up">
+                <ValueType>Integer</ValueType>
+                <TriggerLabel>Uptime Hours</TriggerLabel>
+                <ControlPageLabel>Uptime</ControlPageLabel>
+            </State>
+            
+            <State id="temp">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Internal Temperature</TriggerLabel>
+                <ControlPageLabel>Internal Temp</ControlPageLabel>
+            </State>
+            
+            <State id="vpv">
+                <ValueType>String</ValueType>
+                <TriggerLabel>PV Voltage</TriggerLabel>
+                <ControlPageLabel>PV Voltage</ControlPageLabel>
+            </State>
+            
+            <State id="ipv">
+                <ValueType>String</ValueType>
+                <TriggerLabel>PV Current</TriggerLabel>
+                <ControlPageLabel>PV Current</ControlPageLabel>
+            </State>
+            
+            <State id="pac">
+                <ValueType>String</ValueType>
+                <TriggerLabel>PV Power</TriggerLabel>
+                <ControlPageLabel>PV Power</ControlPageLabel>
+            </State>
+            
+            <State id="response_timeout_count">
+                <ValueType>Integer</ValueType>
+                <TriggerLabel>Timeout Count</TriggerLabel>
+                <ControlPageLabel>Timeout Count</ControlPageLabel>
+            </State>
+
+            <State id="lastUpdated">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Last Updated</TriggerLabel>
+                <ControlPageLabel>Last Updated</ControlPageLabel>
+            </State>
+            
+            <State id="ipv2">
+                <ValueType>String</ValueType>
+                <TriggerLabel>PV Current 2</TriggerLabel>
+                <ControlPageLabel>PV Current 2</ControlPageLabel>
+            </State>
+            
+            <State id="vpv2">
+                <ValueType>String</ValueType>
+                <TriggerLabel>PV Voltage 2</TriggerLabel>
+                <ControlPageLabel>PV Voltage 2</ControlPageLabel>
+            </State>
+            
+            <State id="impedance">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Impedence</TriggerLabel>
+                <ControlPageLabel>Impedence</ControlPageLabel>
+            </State>
+            
+            <State id="total_daykwh">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Total Day KWh</TriggerLabel>
+                <ControlPageLabel>Total Day KWh</ControlPageLabel>
+            </State>
+            <State id="total_power">
+                <ValueType>String</ValueType>
+                <TriggerLabel>Total Power</TriggerLabel>
+                <ControlPageLabel>Total Power</ControlPageLabel>
+            </State>
+
+
+        </States>
+    </Device>
+</Devices>
